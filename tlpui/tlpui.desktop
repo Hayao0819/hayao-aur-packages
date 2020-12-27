@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TLPUI
+Comment=A GTK user interface for TLP
+Keywords=tlp;power;
+Exec=tlpui
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=preferences-system-power-management
+Categories=Application;Utility;
+StartupNotify=true
