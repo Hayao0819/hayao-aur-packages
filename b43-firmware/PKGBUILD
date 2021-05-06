@@ -3,7 +3,7 @@
 pkgname=b43-firmware
 _classic_=${pkgname}-classic
 pkgver=6.30.163.46
-pkgrel=2
+pkgrel=1
 pkgdesc="Firmware for Broadcom B43 wireless networking chips - latest release"
 arch=("any")
 url="https://wireless.wiki.kernel.org/en/users/Drivers/b43"
@@ -13,10 +13,7 @@ makedepends=("b43-fwcutter>=018")
 conflicts=(${_classic_})
 install=${pkgname}.install
 options=(!emptydirs)
-source=(
-	#http://www.lwfinger.com/${pkgname}/broadcom-wl-${pkgver}.tar.bz2
-	https://github.com/ARCHLabs/archlabs_repo/blob/master/x86_64/${pkgname}-${pkgver}-2-x86_64.pkg.tar.xz?raw=true
-)
+source=(http://www.lwfinger.com/${pkgname}/broadcom-wl-${pkgver}.tar.bz2)
 
 package() {
 	cd "${srcdir}"
